@@ -1,10 +1,10 @@
 {
-    "name": "lit-html",
+    "name": "corset-vscode",
     "private": true,
-    "displayName": "lit-html",
-    "description": "Syntax highlighting and IntelliSense for html inside of JavaScript and TypeScript tagged template strings",
-    "version": "1.11.1",
-    "publisher": "bierner",
+    "displayName": "corset",
+    "description": "Syntax highlighting and IntelliSense for CSS inside of JavaScript and TypeScript tagged template strings",
+    "version": "0.0.1",
+    "publisher": "matthewp",
     "icon": "docs/logo.png",
     "license": "MIT",
     "galleryBanner": {
@@ -12,16 +12,17 @@
         "theme": "light"
     },
     "repository": {
-        "url": "https://github.com/mjbvz/vscode-lit-html.git"
+        "url": "https://github.com/matthewp/vscode-corset.git"
     },
     "bugs": {
-        "url": "https://github.com/mjbvz/vscode-lit-html/issues"
+        "url": "https://github.com/matthewp/vscode-corset/issues"
     },
     "categories": [
         "Programming Languages"
     ],
     "keywords": [
-        "lit-html",
+        "css",
+        "corset",
         "javascript",
         "typescript",
         "html",
@@ -40,10 +41,10 @@
     "contributes": {
         "configuration": [
             {
-                "id": "lit-html",
-                "title": "Lit HTML",
+                "id": "corset",
+                "title": "Corset",
                 "properties": {
-                    "lit-html.tags": {
+                    "corset.tags": {
                         "type": "array",
                         "description": "List of template tags to enable html intellisense in.",
                         "items": {
@@ -55,7 +56,7 @@
                             "raw"
                         ]
                     },
-                    "lit-html.format.enabled": {
+                    "corset.format.enabled": {
                         "type": "boolean",
                         "description": "Enable/disable formatting of html template strings.",
                         "default": true
@@ -73,8 +74,8 @@
                     "source.tsx",
                     "text.html.basic"
                 ],
-                "scopeName": "inline.lit-html",
-                "path": "./syntaxes/lit-html.json",
+                "scopeName": "inline.corset",
+                "path": "./syntaxes/corset.json",
                 "embeddedLanguages": {
                     "meta.embedded.block.html": "html",
                     "meta.embedded.block.css": "css",
@@ -90,8 +91,8 @@
                     "source.tsx",
                     "text.html.basic"
                 ],
-                "scopeName": "inline.lit-html.string.injection",
-                "path": "./syntaxes/lit-html-string-injection.json",
+                "scopeName": "inline.corset.string.injection",
+                "path": "./syntaxes/corset-string-injection.json",
                 "embeddedLanguages": {
                     "meta.template.expression.ts": "typescript"
                 }
@@ -105,8 +106,8 @@
                     "source.tsx",
                     "text.html.basic"
                 ],
-                "scopeName": "inline.lit-html.style.injection",
-                "path": "./syntaxes/lit-html-style-injection.json",
+                "scopeName": "inline.corset.style.injection",
+                "path": "./syntaxes/corset-style-injection.json",
                 "embeddedLanguages": {
                     "meta.template.expression.ts": "typescript"
                 }
@@ -120,8 +121,8 @@
                     "source.tsx",
                     "text.html.basic"
                 ],
-                "scopeName": "inline.lit-html-svg",
-                "path": "./syntaxes/lit-html-svg.json",
+                "scopeName": "inline.corset-svg",
+                "path": "./syntaxes/corset-svg.json",
                 "embeddedLanguages": {
                     "meta.embedded.block.svg": "xml"
                 }

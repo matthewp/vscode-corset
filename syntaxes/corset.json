@@ -13,9 +13,9 @@
 	},
 	"patterns": [
 		{
-			"name": "string.js.taggedTemplate.svg",
-			"contentName": "meta.embedded.block.svg",
-			"begin": "(?x)(\\b(?:\\w+\\.)*(?:svg)\\s*)(`)",
+			"name": "string.js.taggedTemplate",
+			"contentName": "meta.embedded.block.css",
+			"begin": "(?x)(\\b(?:\\w+\\.)*(?:sheet)\\s*)(`)",
 			"beginCaptures": {
 				"1": {
 					"name": "entity.name.function.tagged-template.js"
@@ -24,7 +24,6 @@
 					"name": "punctuation.definition.string.template.begin.js"
 				}
 			},
-
 			"end": "(`)",
 			"endCaptures": {
 				"0": {
@@ -39,10 +38,10 @@
 					"include": "source.ts#template-substitution-element"
 				},
 				{
-					"include": "text.xml"
+					"include": "source.css"
 				}
 			]
 		}
 	],
-	"scopeName": "inline.lit-html-svg"
+	"scopeName": "inline.corset"
 }

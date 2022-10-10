@@ -1,8 +1,8 @@
 import * as vscode from 'vscode';
 
 const typeScriptExtensionId = 'vscode.typescript-language-features';
-const pluginId = 'typescript-lit-html-plugin';
-const configurationSection = 'lit-html';
+const pluginId = 'typescript-corset-plugin';
+const configurationSection = 'corset';
 
 interface SynchronizedConfiguration {
     tags?: ReadonlyArray<string>;

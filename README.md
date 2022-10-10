@@ -51,3 +51,7 @@ The plugin formats html code by default. You can disable this by setting `"lit-h
 ```json
 "lit-html.format.enabled": false
 ```
+
+# TODO
+
+- https://github.com/microsoft/typescript-lit-html-plugin
